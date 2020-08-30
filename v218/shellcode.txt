@@ -1,0 +1,40 @@
+// 透明水泡
+call 0x00EB3090
+mov ecx, eax
+push 0
+call 0x00C81FB0
+mov esi, eax
+mov ecx, esi
+add ecx, 0x590
+push 1
+call 0x009CE040
+
+
+// 透视
+call 0x00EB3090
+mov ecx, eax
+push 0
+call 0x00C81FB0
+mov esi, eax
+mov ecx, esi
+add ecx, 0x590
+call 0x009CCAF0
+ret
+
+// 雷达
+call 0x00EB3090
+mov ecx, eax
+push 0
+call 0x00C81FB0
+mov esi, eax
+mov ecx, esi
+add ecx, 0x584
+mov ecx, dword ptr ds:[ecx+0x2100]
+call 0x00C82430
+mov ecx, eax
+mov ecx, dword ptr ds:[ecx+0x10]
+call 0x00C82260
+mov ecx, eax
+push 0xFFFFFFFF
+push 0x0
+call 0x00D13E00
