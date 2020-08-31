@@ -1,5 +1,5 @@
 ## open multiple games (only test in "泡泡堂")
-### 1. Mutex:
+### 1. mutex:
 #### Hook "ntdll.dll!ZwCreateMutant"
 onEnter: ObjectAttributes.ObjectName.Buffer == "Global\FxClientMutex" == '\u0000'
 
@@ -12,4 +12,4 @@ onLeave: AdapterInfo.Address[AdapterInfo.AddressLength] == random physical addre
 onLeave: FileFsVolumeInformation == FsInformationClass && \
 FILE_FS_VOLUME_INFORMATION(FsInformation).VolumeSerialNumber == random volume serial number
 
-# ...
+## ...
