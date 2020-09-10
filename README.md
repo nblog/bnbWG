@@ -6,4 +6,4 @@
 #
 
 # License
-MIT. Dependencies are under their respective licenses.
+Unlicense. Dependencies are under their respective licenses.
