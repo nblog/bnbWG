@@ -2,8 +2,8 @@
     泡泡堂 / BNB / Crazy Arcade
 
 
-### 
-    🐌 is constantly being updated...
+### Da da da...
+    🐌 Da da da...
 
 
 ### License
