@@ -1,0 +1,128 @@
+
+00 74 1D 8B 4D 08 51 E8
+
+00C81FB0                      | 55                       | push ebp                                |
+00C81FB1                      | 8BEC                     | mov ebp,esp                             |
+00C81FB3                      | 83EC 08                  | sub esp,8                               |
+00C81FB6                      | 894D F8                  | mov dword ptr ss:[ebp-8],ecx            |
+00C81FB9                      | C745 FC 00000000         | mov dword ptr ss:[ebp-4],0              |
+00C81FC0                      | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            |
+00C81FC3                      | 83B8 60F11D00 00         | cmp dword ptr ds:[eax+1DF160],0         |
+00C81FCA                      | 74 1D                    | je ca-v218.C81FE9                       |
+00C81FCC                      | 8B4D 08                  | mov ecx,dword ptr ss:[ebp+8]            |
+00C81FCF                      | 51                       | push ecx                                |
+00C81FD0                      | E8 3BF486FF              | call ca-v218.4F1410                     |
+00C81FD5                      | 8BC8                     | mov ecx,eax                             |
+00C81FD7                      | E8 34AF4500              | call ca-v218.10DCF10                    |
+00C81FDC                      | 8945 FC                  | mov dword ptr ss:[ebp-4],eax            |
+00C81FDF                      | 837D FC 00               | cmp dword ptr ss:[ebp-4],0              |
+00C81FE3                      | 7D 04                    | jge ca-v218.C81FE9                      |
+00C81FE5                      | 33C0                     | xor eax,eax                             |
+00C81FE7                      | EB 0C                    | jmp ca-v218.C81FF5                      |
+00C81FE9                      | 8B55 FC                  | mov edx,dword ptr ss:[ebp-4]            |
+00C81FEC                      | 52                       | push edx                                |
+00C81FED                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00C81FF0                      | E8 4BFCFFFF              | call ca-v218.C81C40                     |
+00C81FF5                      | 8BE5                     | mov esp,ebp                             |
+00C81FF7                      | 5D                       | pop ebp                                 |
+00C81FF8                      | C2 0400                  | ret 4                                   |
+00C81FFB                      | CC                       | int3                                    |
+00C81FFC                      | CC                       | int3                                    |
+00C81FFD                      | CC                       | int3                                    |
+
+
+
+
+8B 4D F4 E8 ?? ?? ?? ?? 8B C8 E8 ?? ?? ?? ?? 89 45 F0 83 7D F0 00 75 02
+
+
+00EBA83F                      | CC                       | int3                                    |
+00EBA840                      | 55                       | push ebp                                |
+00EBA841                      | 8BEC                     | mov ebp,esp                             |
+00EBA843                      | 83EC 18                  | sub esp,18                              |
+00EBA846                      | 894D F4                  | mov dword ptr ss:[ebp-C],ecx            |
+00EBA849                      | E8 222C63FF              | call ca-v218.4ED470                     |
+00EBA84E                      | 8BC8                     | mov ecx,eax                             |
+00EBA850                      | E8 5B8D3E00              | call ca-v218.12A35B0                    |
+00EBA855                      | 0FB6C0                   | movzx eax,al                            |
+00EBA858                      | 85C0                     | test eax,eax                            |
+00EBA85A                      | 74 05                    | je ca-v218.EBA861                       |
+00EBA85C                      | E9 F7000000              | jmp ca-v218.EBA958                      |
+00EBA861                      | C745 FC 00000000         | mov dword ptr ss:[ebp-4],0              |
+00EBA868                      | EB 09                    | jmp ca-v218.EBA873                      |
+00EBA86A                      | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+00EBA86D                      | 83C1 01                  | add ecx,1                               |
+00EBA870                      | 894D FC                  | mov dword ptr ss:[ebp-4],ecx            |
+00EBA873                      | E8 A86B63FF              | call ca-v218.4F1420                     |
+00EBA878                      | 8BC8                     | mov ecx,eax                             |
+00EBA87A                      | E8 61F43A00              | call ca-v218.1269CE0                    |
+00EBA87F                      | 3945 FC                  | cmp dword ptr ss:[ebp-4],eax            |
+00EBA882                      | 0F8D D0000000            | jge ca-v218.EBA958                      |
+00EBA888                      | 8B55 FC                  | mov edx,dword ptr ss:[ebp-4]            |
+00EBA88B                      | 52                       | push edx                                |
+00EBA88C                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00EBA88F                      | E8 FC87FFFF              | call ca-v218.EB3090                     | get roles object
+00EBA894                      | 8BC8                     | mov ecx,eax                             |
+00EBA896                      | E8 1577DCFF              | call ca-v218.C81FB0                     | get self object (param1: 0)
+00EBA89B                      | 8945 F0                  | mov dword ptr ss:[ebp-10],eax           |
+00EBA89E                      | 837D F0 00               | cmp dword ptr ss:[ebp-10],0             |
+00EBA8A2                      | 75 02                    | jne ca-v218.EBA8A6                      |
+00EBA8A4                      | EB C4                    | jmp ca-v218.EBA86A                      |
+00EBA8A6                      | 8B45 FC                  | mov eax,dword ptr ss:[ebp-4]            |
+00EBA8A9                      | 50                       | push eax                                |
+00EBA8AA                      | E8 C12B63FF              | call ca-v218.4ED470                     |
+00EBA8AF                      | 8BC8                     | mov ecx,eax                             |
+00EBA8B1                      | E8 7A913E00              | call ca-v218.12A3A30                    |
+00EBA8B6                      | 0FB7C8                   | movzx ecx,ax                            |
+00EBA8B9                      | 894D E8                  | mov dword ptr ss:[ebp-18],ecx           |
+00EBA8BC                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+00EBA8BF                      | 81C1 84050000            | add ecx,584                             |
+00EBA8C5                      | 8B55 F0                  | mov edx,dword ptr ss:[ebp-10]           |
+00EBA8C8                      | 8B82 84050000            | mov eax,dword ptr ds:[edx+584]          |
+00EBA8CE                      | 8B50 3C                  | mov edx,dword ptr ds:[eax+3C]           |
+00EBA8D1                      | FFD2                     | call edx                                |
+00EBA8D3                      | 8945 F8                  | mov dword ptr ss:[ebp-8],eax            |
+00EBA8D6                      | 8B45 FC                  | mov eax,dword ptr ss:[ebp-4]            |
+00EBA8D9                      | 50                       | push eax                                |
+00EBA8DA                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00EBA8DD                      | 81C1 68100000            | add ecx,1068                            |
+00EBA8E3                      | E8 C80D0000              | call ca-v218.EBB6B0                     |
+00EBA8E8                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00EBA8EB                      | 3B08                     | cmp ecx,dword ptr ds:[eax]              |
+00EBA8ED                      | 74 64                    | je ca-v218.EBA953                       |
+00EBA8EF                      | 8B55 FC                  | mov edx,dword ptr ss:[ebp-4]            |
+00EBA8F2                      | 52                       | push edx                                |
+00EBA8F3                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00EBA8F6                      | 81C1 68100000            | add ecx,1068                            |
+00EBA8FC                      | E8 AF0D0000              | call ca-v218.EBB6B0                     |
+00EBA901                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00EBA904                      | 8908                     | mov dword ptr ds:[eax],ecx              |
+00EBA906                      | C745 EC 00000000         | mov dword ptr ss:[ebp-14],0             |
+00EBA90D                      | 8B55 E8                  | mov edx,dword ptr ss:[ebp-18]           |
+00EBA910                      | 52                       | push edx                                |
+00EBA911                      | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            |
+00EBA914                      | 50                       | push eax                                |
+00EBA915                      | E8 16020000              | call ca-v218.EBAB30                     |
+00EBA91A                      | 83C4 08                  | add esp,8                               |
+00EBA91D                      | 85C0                     | test eax,eax                            |
+00EBA91F                      | 74 09                    | je ca-v218.EBA92A                       |
+00EBA921                      | C745 EC 01000000         | mov dword ptr ss:[ebp-14],1             |
+00EBA928                      | EB 17                    | jmp ca-v218.EBA941                      |
+00EBA92A                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00EBA92D                      | 51                       | push ecx                                |
+00EBA92E                      | E8 2D060000              | call ca-v218.EBAF60                     |
+00EBA933                      | 83C4 04                  | add esp,4                               |
+00EBA936                      | 85C0                     | test eax,eax                            |
+00EBA938                      | 74 07                    | je ca-v218.EBA941                       |
+00EBA93A                      | C745 EC 01000000         | mov dword ptr ss:[ebp-14],1             |
+00EBA941                      | 837D EC 00               | cmp dword ptr ss:[ebp-14],0             |
+00EBA945                      | 74 0C                    | je ca-v218.EBA953                       |
+00EBA947                      | 8B55 FC                  | mov edx,dword ptr ss:[ebp-4]            |
+00EBA94A                      | 52                       | push edx                                |
+00EBA94B                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00EBA94E                      | E8 ADF1FFFF              | call ca-v218.EB9B00                     |
+00EBA953                      | E9 12FFFFFF              | jmp ca-v218.EBA86A                      |
+00EBA958                      | 8BE5                     | mov esp,ebp                             |
+00EBA95A                      | 5D                       | pop ebp                                 |
+00EBA95B                      | C3                       | ret                                     |
+00EBA95C                      | CC                       | int3                                    |

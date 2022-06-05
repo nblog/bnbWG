@@ -1,0 +1,6 @@
+
+# https://github.com/frida/frida
+frida >=15.1.22
+
+# https://github.com/boppreh/keyboard
+keyboard

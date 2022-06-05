@@ -1,0 +1,499 @@
+6A 02 E8 ?? ?? ?? ?? 83 C4 04 39 45 F8 75 07 B8 01 00 00 00 EB 02 33 C0
+
++35
+
+$-1F3    00A08921          | 83EC 3C                  | sub esp,3C                              |
+$-1F0    00A08924          | A1 48D88901              | mov eax,dword ptr ds:[189D848]          |
+$-1EB    00A08929          | 33C5                     | xor eax,ebp                             |
+$-1E9    00A0892B          | 50                       | push eax                                |
+$-1E8    00A0892C          | 8D45 F4                  | lea eax,dword ptr ss:[ebp-C]            |
+$-1E5    00A0892F          | 64:A3 00000000           | mov dword ptr fs:[0],eax                |
+$-1DF    00A08935          | 894D EC                  | mov dword ptr ss:[ebp-14],ecx           |
+$-1DC    00A08938          | 6A 01                    | push 1                                  |
+$-1DA    00A0893A          | 6A 04                    | push 4                                  |
+$-1D8    00A0893C          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-1D5    00A0893F          | E8 3C2C7400              | call ca.114B580                         |
+$-1D0    00A08944          | C745 FC 00000000         | mov dword ptr ss:[ebp-4],0              |
+$-1C9    00A0894B          | 6A FF                    | push FFFFFFFF                           |
+$-1C7    00A0894D          | 6A 01                    | push 1                                  |
+$-1C5    00A0894F          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-1C2    00A08952          | E8 B92D7400              | call ca.114B710                         |
+$-1BD    00A08957          | 8B4D EC                  | mov ecx,dword ptr ss:[ebp-14]           |
+$-1BA    00A0895A          | E8 D1010000              | call ca.A08B30                          |
+$-1B5    00A0895F          | 8945 E8                  | mov dword ptr ss:[ebp-18],eax           |
+$-1B2    00A08962          | 6A 01                    | push 1                                  |
+$-1B0    00A08964          | E8 A7B8FEFF              | call ca.9F4210                          |
+$-1AB    00A08969          | 83C4 04                  | add esp,4                               |
+$-1A8    00A0896C          | 3945 E8                  | cmp dword ptr ss:[ebp-18],eax           |
+$-1A5    00A0896F          | 75 09                    | jne ca.A0897A                           |
+$-1A3    00A08971          | C745 F0 01000000         | mov dword ptr ss:[ebp-10],1             |
+$-19C    00A08978          | EB 07                    | jmp ca.A08981                           |
+$-19A    00A0897A          | C745 F0 00000000         | mov dword ptr ss:[ebp-10],0             |
+$-193    00A08981          | 8B45 F0                  | mov eax,dword ptr ss:[ebp-10]           |
+$-190    00A08984          | 50                       | push eax                                |
+$-18F    00A08985          | 6A 02                    | push 2                                  |
+$-18D    00A08987          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-18A    00A0898A          | E8 F12D7400              | call ca.114B780                         |
+$-185    00A0898F          | 85C0                     | test eax,eax                            |
+$-183    00A08991          | 74 25                    | je ca.A089B8                            |
+$-181    00A08993          | 6A 03                    | push 3                                  |
+$-17F    00A08995          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-17C    00A08998          | E8 532E7400              | call ca.114B7F0                         |
+$-177    00A0899D          | C745 E4 01000000         | mov dword ptr ss:[ebp-1C],1             |
+$-170    00A089A4          | C745 FC FFFFFFFF         | mov dword ptr ss:[ebp-4],FFFFFFFF       |
+$-169    00A089AB          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-166    00A089AE          | E8 AD2C7400              | call ca.114B660                         |
+$-161    00A089B3          | 8B45 E4                  | mov eax,dword ptr ss:[ebp-1C]           |
+$-15E    00A089B6          | EB 23                    | jmp ca.A089DB                           |
+$-15C    00A089B8          | 6A 04                    | push 4                                  |
+$-15A    00A089BA          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-157    00A089BD          | E8 2E2E7400              | call ca.114B7F0                         |
+$-152    00A089C2          | C745 E0 00000000         | mov dword ptr ss:[ebp-20],0             |
+$-14B    00A089C9          | C745 FC FFFFFFFF         | mov dword ptr ss:[ebp-4],FFFFFFFF       |
+$-144    00A089D0          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-141    00A089D3          | E8 882C7400              | call ca.114B660                         |
+$-13C    00A089D8          | 8B45 E0                  | mov eax,dword ptr ss:[ebp-20]           |
+$-139    00A089DB          | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+$-136    00A089DE          | 64:890D 00000000         | mov dword ptr fs:[0],ecx                |
+$-12F    00A089E5          | 59                       | pop ecx                                 |
+$-12E    00A089E6          | 8BE5                     | mov esp,ebp                             |
+$-12C    00A089E8          | 5D                       | pop ebp                                 |
+$-12B    00A089E9          | C3                       | ret                                     |
+$-12A    00A089EA          | CC                       | int3                                    |
+$-129    00A089EB          | CC                       | int3                                    |
+$-128    00A089EC          | CC                       | int3                                    |
+$-127    00A089ED          | CC                       | int3                                    |
+$-126    00A089EE          | CC                       | int3                                    |
+$-125    00A089EF          | CC                       | int3                                    |
+$-124    00A089F0          | 55                       | push ebp                                |
+$-123    00A089F1          | 8BEC                     | mov ebp,esp                             |
+$-121    00A089F3          | 83EC 08                  | sub esp,8                               |
+$-11E    00A089F6          | 894D FC                  | mov dword ptr ss:[ebp-4],ecx            |
+$-11B    00A089F9          | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$-118    00A089FC          | E8 2F010000              | call ca.A08B30                          |
+$-113    00A08A01          | 8945 F8                  | mov dword ptr ss:[ebp-8],eax            |
+$-110    00A08A04          | 6A 01                    | push 1                                  |
+$-10E    00A08A06          | E8 05B8FEFF              | call ca.9F4210                          |
+$-109    00A08A0B          | 83C4 04                  | add esp,4                               |
+$-106    00A08A0E          | 3945 F8                  | cmp dword ptr ss:[ebp-8],eax            |
+$-103    00A08A11          | 75 07                    | jne ca.A08A1A                           |
+$-101    00A08A13          | B8 01000000              | mov eax,1                               |
+$-FC     00A08A18          | EB 02                    | jmp ca.A08A1C                           |
+$-FA     00A08A1A          | 33C0                     | xor eax,eax                             |
+$-F8     00A08A1C          | 8BE5                     | mov esp,ebp                             |
+$-F6     00A08A1E          | 5D                       | pop ebp                                 |
+$-F5     00A08A1F          | C3                       | ret                                     |
+$-F4     00A08A20          | 55                       | push ebp                                |
+$-F3     00A08A21          | 8BEC                     | mov ebp,esp                             |
+$-F1     00A08A23          | 6A FF                    | push FFFFFFFF                           |
+$-EF     00A08A25          | 68 A9D14F01              | push ca.14FD1A9                         |
+$-EA     00A08A2A          | 64:A1 00000000           | mov eax,dword ptr fs:[0]                |
+$-E4     00A08A30          | 50                       | push eax                                |
+$-E3     00A08A31          | 83EC 3C                  | sub esp,3C                              |
+$-E0     00A08A34          | A1 48D88901              | mov eax,dword ptr ds:[189D848]          |
+$-DB     00A08A39          | 33C5                     | xor eax,ebp                             |
+$-D9     00A08A3B          | 50                       | push eax                                |
+$-D8     00A08A3C          | 8D45 F4                  | lea eax,dword ptr ss:[ebp-C]            |
+$-D5     00A08A3F          | 64:A3 00000000           | mov dword ptr fs:[0],eax                |
+$-CF     00A08A45          | 894D EC                  | mov dword ptr ss:[ebp-14],ecx           |
+$-CC     00A08A48          | 6A 01                    | push 1                                  |
+$-CA     00A08A4A          | 6A 05                    | push 5                                  |
+$-C8     00A08A4C          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-C5     00A08A4F          | E8 2C2B7400              | call ca.114B580                         |
+$-C0     00A08A54          | C745 FC 00000000         | mov dword ptr ss:[ebp-4],0              |
+$-B9     00A08A5B          | 6A FF                    | push FFFFFFFF                           |
+$-B7     00A08A5D          | 6A 01                    | push 1                                  |
+$-B5     00A08A5F          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-B2     00A08A62          | E8 A92C7400              | call ca.114B710                         |
+$-AD     00A08A67          | 8B4D EC                  | mov ecx,dword ptr ss:[ebp-14]           |
+$-AA     00A08A6A          | E8 C1000000              | call ca.A08B30                          |
+$-A5     00A08A6F          | 8945 E8                  | mov dword ptr ss:[ebp-18],eax           |
+$-A2     00A08A72          | 6A 02                    | push 2                                  |
+$-A0     00A08A74          | E8 97B7FEFF              | call ca.9F4210                          |
+$-9B     00A08A79          | 83C4 04                  | add esp,4                               |
+$-98     00A08A7C          | 3945 E8                  | cmp dword ptr ss:[ebp-18],eax           |
+$-95     00A08A7F          | 75 09                    | jne ca.A08A8A                           |
+$-93     00A08A81          | C745 F0 01000000         | mov dword ptr ss:[ebp-10],1             |
+$-8C     00A08A88          | EB 07                    | jmp ca.A08A91                           |
+$-8A     00A08A8A          | C745 F0 00000000         | mov dword ptr ss:[ebp-10],0             |
+$-83     00A08A91          | 8B45 F0                  | mov eax,dword ptr ss:[ebp-10]           |
+$-80     00A08A94          | 50                       | push eax                                |
+$-7F     00A08A95          | 6A 02                    | push 2                                  |
+$-7D     00A08A97          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-7A     00A08A9A          | E8 E12C7400              | call ca.114B780                         |
+$-75     00A08A9F          | 85C0                     | test eax,eax                            |
+$-73     00A08AA1          | 74 25                    | je ca.A08AC8                            |
+$-71     00A08AA3          | 6A 03                    | push 3                                  |
+$-6F     00A08AA5          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-6C     00A08AA8          | E8 432D7400              | call ca.114B7F0                         |
+$-67     00A08AAD          | C745 E4 01000000         | mov dword ptr ss:[ebp-1C],1             |
+$-60     00A08AB4          | C745 FC FFFFFFFF         | mov dword ptr ss:[ebp-4],FFFFFFFF       |
+$-59     00A08ABB          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-56     00A08ABE          | E8 9D2B7400              | call ca.114B660                         |
+$-51     00A08AC3          | 8B45 E4                  | mov eax,dword ptr ss:[ebp-1C]           |
+$-4E     00A08AC6          | EB 23                    | jmp ca.A08AEB                           |
+$-4C     00A08AC8          | 6A 04                    | push 4                                  |
+$-4A     00A08ACA          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-47     00A08ACD          | E8 1E2D7400              | call ca.114B7F0                         |
+$-42     00A08AD2          | C745 E0 00000000         | mov dword ptr ss:[ebp-20],0             |
+$-3B     00A08AD9          | C745 FC FFFFFFFF         | mov dword ptr ss:[ebp-4],FFFFFFFF       |
+$-34     00A08AE0          | 8D4D B8                  | lea ecx,dword ptr ss:[ebp-48]           |
+$-31     00A08AE3          | E8 782B7400              | call ca.114B660                         |
+$-2C     00A08AE8          | 8B45 E0                  | mov eax,dword ptr ss:[ebp-20]           |
+$-29     00A08AEB          | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+$-26     00A08AEE          | 64:890D 00000000         | mov dword ptr fs:[0],ecx                |
+$-1F     00A08AF5          | 59                       | pop ecx                                 |
+$-1E     00A08AF6          | 8BE5                     | mov esp,ebp                             |
+$-1C     00A08AF8          | 5D                       | pop ebp                                 |
+$-1B     00A08AF9          | C3                       | ret                                     |
+$-1A     00A08AFA          | CC                       | int3                                    |
+$-19     00A08AFB          | CC                       | int3                                    |
+$-18     00A08AFC          | CC                       | int3                                    |
+$-17     00A08AFD          | CC                       | int3                                    |
+$-16     00A08AFE          | CC                       | int3                                    |
+$-15     00A08AFF          | CC                       | int3                                    |
+$-14     00A08B00          | 55                       | push ebp                                |
+$-13     00A08B01          | 8BEC                     | mov ebp,esp                             |
+$-11     00A08B03          | 83EC 08                  | sub esp,8                               |
+$-E      00A08B06          | 894D FC                  | mov dword ptr ss:[ebp-4],ecx            |
+$-B      00A08B09          | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$-8      00A08B0C          | E8 1F000000              | call ca.A08B30                          |
+$-3      00A08B11          | 8945 F8                  | mov dword ptr ss:[ebp-8],eax            |
+$ ==>    00A08B14          | 6A 02                    | push 2                                  |
+$+2      00A08B16          | E8 F5B6FEFF              | call ca.9F4210                          |
+$+7      00A08B1B          | 83C4 04                  | add esp,4                               |
+$+A      00A08B1E          | 3945 F8                  | cmp dword ptr ss:[ebp-8],eax            |
+$+D      00A08B21          | 75 07                    | jne ca.A08B2A                           |
+$+F      00A08B23          | B8 01000000              | mov eax,1                               |
+$+14     00A08B28          | EB 02                    | jmp ca.A08B2C                           |
+$+16     00A08B2A          | 33C0                     | xor eax,eax                             |
+$+18     00A08B2C          | 8BE5                     | mov esp,ebp                             |
+$+1A     00A08B2E          | 5D                       | pop ebp                                 |
+$+1B     00A08B2F          | C3                       | ret                                     |
+$+1C     00A08B30          | 55                       | push ebp                                |
+$+1D     00A08B31          | 8BEC                     | mov ebp,esp                             |
+$+1F     00A08B33          | 83EC 08                  | sub esp,8                               |
+$+22     00A08B36          | 53                       | push ebx                                |
+$+23     00A08B37          | 56                       | push esi                                |
+$+24     00A08B38          | 57                       | push edi                                |
+$+25     00A08B39          | 894D FC                  | mov dword ptr ss:[ebp-4],ecx            |
+$+28     00A08B3C          | 6A 00                    | push 0                                  |
+$+2A     00A08B3E          | E8 CDB6FEFF              | call ca.9F4210                          |
+$+2F     00A08B43          | 83C4 04                  | add esp,4                               |
+$+32     00A08B46          | 8945 F8                  | mov dword ptr ss:[ebp-8],eax            |
+$+35     00A08B49          | E9 9FA75E01              | jmp ca.1FF32ED                          | 跳转到混淆段
+$+3A     00A08B4E          | 00EC                     | add ah,ch                               |
+$+3C     00A08B50          | 94                       | xchg esp,eax                            |
+$+3D     00A08B51          | CD C6                    | int C6                                  |
+$+3F     00A08B53          | 34 6B                    | xor al,6B                               |
+$+41     00A08B55          | C132 F3                  | shl dword ptr ds:[edx],F3               |
+$+44     00A08B58          | 52                       | push edx                                |
+$+45     00A08B59          | BA 15F63CC5              | mov edx,C53CF615                        |
+$+4A     00A08B5E          | 82A0 61B3008C CF         | and byte ptr ds:[eax-73FF4C9F],CF       |
+$+51     00A08B65          | B3 6E                    | mov bl,6E                               | 6E:'n'
+$+53     00A08B67          | 00F2                     | add dl,dh                               |
+$+55     00A08B69          | B7 C4                    | mov bh,C4                               |
+$+57     00A08B6B          | 67:7B 33                 | jnp ca.A08BA1                           |
+$+5A     00A08B6E          | 3C 7A                    | cmp al,7A                               | 7A:'z'
+$+5C     00A08B70          | C030 60                  | shl byte ptr ds:[eax],60                |
+$+5F     00A08B73          | 7A 78                    | jp ca.A08BED                            |
+$+61     00A08B75          | 14 A0                    | adc al,A0                               |
+$+63     00A08B77          | 42                       | inc edx                                 |
+$+64     00A08B78          | 41                       | inc ecx                                 |
+$+65     00A08B79          | 41                       | inc ecx                                 |
+$+66     00A08B7A          | D8CA                     | fmul st(0),st(2)                        |
+$+68     00A08B7C          | 46                       | inc esi                                 |
+$+69     00A08B7D          | 54                       | push esp                                |
+$+6A     00A08B7E          | A3 C3DAB51C              | mov dword ptr ds:[1CB5DAC3],eax         |
+$+6F     00A08B83          | 47                       | inc edi                                 |
+$+70     00A08B84          | 3242 32                  | xor al,byte ptr ds:[edx+32]             |
+$+73     00A08B87          | E0 F0                    | loopne ca.A08B79                        |
+$+75     00A08B89          | C3                       | ret                                     |
+$+76     00A08B8A          | B4 E4                    | mov ah,E4                               |
+$+78     00A08B8C          | 9E                       | sahf                                    |
+$+79     00A08B8D          | 1AD3                     | sbb dl,bl                               |
+$+7B     00A08B8F          | E1 D3                    | loope ca.A08B64                         |
+$+7D     00A08B91          | 77 76                    | ja ca.A08C09                            |
+$+7F     00A08B93          | 75 77                    | jne ca.A08C0C                           |
+$+81     00A08B95          | 1A88 C5F4CAA6            | sbb cl,byte ptr ds:[eax-59350B3B]       |
+$+87     00A08B9B          | D279 FB                  | sar byte ptr ds:[ecx-5],cl              |
+$+8A     00A08B9E          | 5A                       | pop edx                                 |
+$+8B     00A08B9F          | C051 DD 27               | rcl byte ptr ds:[ecx-23],27             |
+$+8F     00A08BA3          | E1 5F                    | loope ca.A08C04                         |
+$+91     00A08BA5          | A5                       | movsd                                   |
+$+92     00A08BA6          | 1289 FF89FF89            | adc cl,byte ptr ds:[ecx-76007601]       |
+$+98     00A08BAC          | C9                       | leave                                   |
+$+99     00A08BAD          | 89DB                     | mov ebx,ebx                             |
+$+9B     00A08BAF          | 89C0                     | mov eax,eax                             |
+$+9D     00A08BB1          | 89FF                     | mov edi,edi                             |
+$+9F     00A08BB3          | 89FF                     | mov edi,edi                             |
+$+A1     00A08BB5          | 89D2                     | mov edx,edx                             |
+$+A3     00A08BB7          | 89C0                     | mov eax,eax                             |
+$+A5     00A08BB9          | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            |
+$+A8     00A08BBC          | 5F                       | pop edi                                 |
+$+A9     00A08BBD          | 5E                       | pop esi                                 |
+$+AA     00A08BBE          | 5B                       | pop ebx                                 |
+$+AB     00A08BBF          | 8BE5                     | mov esp,ebp                             |
+$+AD     00A08BC1          | 5D                       | pop ebp                                 |
+$+AE     00A08BC2          | C3                       | ret                                     |
+$+AF     00A08BC3          | CC                       | int3                                    |
+$+B0     00A08BC4          | CC                       | int3                                    |
+$+B1     00A08BC5          | CC                       | int3                                    |
+$+B2     00A08BC6          | CC                       | int3                                    |
+$+B3     00A08BC7          | CC                       | int3                                    |
+$+B4     00A08BC8          | CC                       | int3                                    |
+$+B5     00A08BC9          | CC                       | int3                                    |
+$+B6     00A08BCA          | CC                       | int3                                    |
+$+B7     00A08BCB          | CC                       | int3                                    |
+
+
+
+
+
+nop => 启动光盾
+
+01FF32ED                   | FF75 FC                  | push dword ptr ss:[ebp-4]               |
+01FF32F0                   | 53                       | push ebx                                |
+01FF32F1                   | 56                       | push esi                                |
+01FF32F2                   | BE E1154D18              | mov esi,184D15E1                        |
+01FF32F7                   | 897424 04                | mov dword ptr ss:[esp+4],esi            |
+01FF32FB                   | 8B3424                   | mov esi,dword ptr ss:[esp]              |
+01FF32FE                   | 83C4 04                  | add esp,4                               |
+01FF3301                   | 890C24                   | mov dword ptr ss:[esp],ecx              |
+01FF3304                   | 68 75B18D58              | push ngclient.588DB175                  |
+01FF3309                   | 893424                   | mov dword ptr ss:[esp],esi              |
+01FF330C                   | BE 398FF37E              | mov esi,7EF38F39                        |
+01FF3311                   | 89F1                     | mov ecx,esi                             |
+01FF3313                   | FF3424                   | push dword ptr ss:[esp]                 |
+01FF3316                   | 5E                       | pop esi                                 |
+01FF3317                   | 50                       | push eax                                |
+01FF3318                   | 89E0                     | mov eax,esp                             |
+01FF331A                   | 05 04000000              | add eax,4                               |
+01FF331F                   | 83C0 04                  | add eax,4                               |
+01FF3322                   | 870424                   | xchg dword ptr ss:[esp],eax             |
+01FF3325                   | 5C                       | pop esp                                 |
+01FF3326                   | 816C24 04 B147FF27       | sub dword ptr ss:[esp+4],27FF47B1       |
+01FF332E                   | 55                       | push ebp                                |
+01FF332F                   | BD 75F15F7F              | mov ebp,7F5FF175                        |
+01FF3334                   | 296C24 08                | sub dword ptr ss:[esp+8],ebp            |
+01FF3338                   | 5D                       | pop ebp                                 |
+01FF3339                   | 014C24 04                | add dword ptr ss:[esp+4],ecx            |
+01FF333D                   | 814424 04 75F15F7F       | add dword ptr ss:[esp+4],7F5FF175       |
+01FF3345                   | 56                       | push esi                                |
+01FF3346                   | BE B147FF27              | mov esi,27FF47B1                        |
+01FF334B                   | 017424 08                | add dword ptr ss:[esp+8],esi            |
+01FF334F                   | 8B3424                   | mov esi,dword ptr ss:[esp]              |
+01FF3352                   | 81C4 04000000            | add esp,4                               |
+01FF3358                   | 59                       | pop ecx                                 |
+01FF3359                   | FF3424                   | push dword ptr ss:[esp]                 |
+01FF335C                   | 8B0C24                   | mov ecx,dword ptr ss:[esp]              |
+01FF335F                   | 56                       | push esi                                |
+01FF3360                   | 89E6                     | mov esi,esp                             |
+01FF3362                   | 81C6 04000000            | add esi,4                               |
+01FF3368                   | 81C6 04000000            | add esi,4                               |
+01FF336E                   | 873424                   | xchg dword ptr ss:[esp],esi             |
+01FF3371                   | 5C                       | pop esp                                 |
+01FF3372                   | 83C4 04                  | add esp,4                               |
+01FF3375                   | 81E9 398FF37E            | sub ecx,7EF38F39                        |
+01FF337B                   | E8 1059A0FE              | call ca.9F8C90                          |
+01FF3380                   | 85C0                     | test eax,eax                            |
+01FF3382                   | 0F8C 02050000            | jl ca.1FF388A                           | nop
+01FF3388                   | FF75 FC                  | push dword ptr ss:[ebp-4]               |
+01FF338B                   | 813424 CF5B9435          | xor dword ptr ss:[esp],35945BCF         |
+01FF3392                   | FF3424                   | push dword ptr ss:[esp]                 |
+01FF3395                   | 8B0C24                   | mov ecx,dword ptr ss:[esp]              |
+01FF3398                   | 83C4 04                  | add esp,4                               |
+01FF339B                   | 50                       | push eax                                |
+01FF339C                   | 893424                   | mov dword ptr ss:[esp],esi              |
+01FF339F                   | 89E6                     | mov esi,esp                             |
+01FF33A1                   | 81C6 04000000            | add esi,4                               |
+01FF33A7                   | 81C6 04000000            | add esi,4                               |
+01FF33AD                   | 873424                   | xchg dword ptr ss:[esp],esi             |
+01FF33B0                   | 5C                       | pop esp                                 |
+01FF33B1                   | 52                       | push edx                                |
+01FF33B2                   | BA 5D877E5F              | mov edx,5F7E875D                        |
+01FF33B7                   | C1E2 01                  | shl edx,1                               |
+01FF33BA                   | 50                       | push eax                                |
+01FF33BB                   | C70424 71E9B934          | mov dword ptr ss:[esp],34B9E971         |
+01FF33C2                   | 890424                   | mov dword ptr ss:[esp],eax              |
+01FF33C5                   | B8 33F3BF76              | mov eax,shell32.76BFF333                |
+01FF33CA                   | 35 60F27B73              | xor eax,737BF260                        |
+01FF33CF                   | F7D8                     | neg eax                                 |
+01FF33D1                   | 2D F72CAF76              | sub eax,shell32.76AF2CF7                |
+01FF33D6                   | 81EC 04000000            | sub esp,4                               |
+01FF33DC                   | 892C24                   | mov dword ptr ss:[esp],ebp              |
+01FF33DF                   | BD 01000000              | mov ebp,1                               |
+01FF33E4                   | 29E8                     | sub eax,ebp                             |
+01FF33E6                   | 5D                       | pop ebp                                 |
+01FF33E7                   | C1E8 05                  | shr eax,5                               |
+01FF33EA                   | 57                       | push edi                                |
+01FF33EB                   | BF 4F535F59              | mov edi,595F534F                        |
+01FF33F0                   | 57                       | push edi                                |
+01FF33F1                   | BF F2F3763E              | mov edi,3E76F3F2                        |
+01FF33F6                   | C1EF 07                  | shr edi,7                               |
+01FF33F9                   | 81F7 31FB036B            | xor edi,twinapi.appcore.6B03FB31        |
+01FF33FF                   | 05 251FFF1B              | add eax,1BFF1F25                        |
+01FF3404                   | 01F8                     | add eax,edi                             |
+01FF3406                   | 2D 251FFF1B              | sub eax,1BFF1F25                        |
+01FF340B                   | 5F                       | pop edi                                 |
+01FF340C                   | 01F8                     | add eax,edi                             |
+01FF340E                   | 2D D6167F6B              | sub eax,6B7F16D6                        |
+01FF3413                   | 8B3C24                   | mov edi,dword ptr ss:[esp]              |
+01FF3416                   | 83C4 04                  | add esp,4                               |
+01FF3419                   | 09C2                     | or edx,eax                              |
+01FF341B                   | 58                       | pop eax                                 |
+01FF341C                   | C1E2 05                  | shl edx,5                               |
+01FF341F                   | 81C2 01000000            | add edx,1                               |
+01FF3425                   | C1E2 08                  | shl edx,8                               |
+01FF3428                   | 50                       | push eax                                |
+01FF3429                   | B8 AB85FA49              | mov eax,49FA85AB                        |
+01FF342E                   | C1E8 03                  | shr eax,3                               |
+01FF3431                   | 25 DB14EF33              | and eax,33EF14DB                        |
+01FF3436                   | 05 3D39FD77              | add eax,77FD393D                        |
+01FF343B                   | F7D8                     | neg eax                                 |
+01FF343D                   | C1E8 07                  | shr eax,7                               |
+01FF3440                   | 2D 9D0CA23E              | sub eax,3EA20C9D                        |
+01FF3445                   | 31C2                     | xor edx,eax                             |
+01FF3447                   | 58                       | pop eax                                 |
+01FF3448                   | 31D1                     | xor ecx,edx                             |
+01FF344A                   | 5A                       | pop edx                                 |
+01FF344B                   | 50                       | push eax                                |
+01FF344C                   | 51                       | push ecx                                |
+01FF344D                   | 891424                   | mov dword ptr ss:[esp],edx              |
+01FF3450                   | 57                       | push edi                                |
+01FF3451                   | 68 3578BE23              | push 23BE7835                           |
+01FF3456                   | 891424                   | mov dword ptr ss:[esp],edx              |
+01FF3459                   | BA F1CDCB5B              | mov edx,5BCBCDF1                        |
+01FF345E                   | 53                       | push ebx                                |
+01FF345F                   | 89D3                     | mov ebx,edx                             |
+01FF3461                   | 89DF                     | mov edi,ebx                             |
+01FF3463                   | 8B1C24                   | mov ebx,dword ptr ss:[esp]              |
+01FF3466                   | 56                       | push esi                                |
+01FF3467                   | 89E6                     | mov esi,esp                             |
+01FF3469                   | 81C6 04000000            | add esi,4                               |
+01FF346F                   | 81C6 04000000            | add esi,4                               |
+01FF3475                   | 873424                   | xchg dword ptr ss:[esp],esi             |
+01FF3478                   | 5C                       | pop esp                                 |
+01FF3479                   | 8B1424                   | mov edx,dword ptr ss:[esp]              |
+01FF347C                   | 52                       | push edx                                |
+01FF347D                   | 89E2                     | mov edx,esp                             |
+01FF347F                   | 81C2 04000000            | add edx,4                               |
+01FF3485                   | 81C2 04000000            | add edx,4                               |
+01FF348B                   | 871424                   | xchg dword ptr ss:[esp],edx             |
+01FF348E                   | 5C                       | pop esp                                 |
+01FF348F                   | 89FA                     | mov edx,edi                             |
+01FF3491                   | 5F                       | pop edi                                 |
+01FF3492                   | 81EA 55A7CB5B            | sub edx,5BCBA755                        |
+01FF3498                   | 52                       | push edx                                |
+01FF3499                   | FF3424                   | push dword ptr ss:[esp]                 |
+01FF349C                   | 58                       | pop eax                                 |
+01FF349D                   | 83C4 04                  | add esp,4                               |
+01FF34A0                   | 5A                       | pop edx                                 |
+01FF34A1                   | 01C1                     | add ecx,eax                             |
+01FF34A3                   | 8B0424                   | mov eax,dword ptr ss:[esp]              |
+01FF34A6                   | 56                       | push esi                                |
+01FF34A7                   | 54                       | push esp                                |
+01FF34A8                   | 5E                       | pop esi                                 |
+01FF34A9                   | 68 F4739428              | push 289473F4                           |
+01FF34AE                   | 890C24                   | mov dword ptr ss:[esp],ecx              |
+01FF34B1                   | B9 04000000              | mov ecx,4                               |
+01FF34B6                   | 01CE                     | add esi,ecx                             |
+01FF34B8                   | 59                       | pop ecx                                 |
+01FF34B9                   | 81C6 04000000            | add esi,4                               |
+01FF34BF                   | 333424                   | xor esi,dword ptr ss:[esp]              |
+01FF34C2                   | 313424                   | xor dword ptr ss:[esp],esi              |
+01FF34C5                   | 333424                   | xor esi,dword ptr ss:[esp]              |
+01FF34C8                   | 5C                       | pop esp                                 |
+01FF34C9                   | E8 121157FE              | call ca.5645E0                          |
+01FF34CE                   | 85C0                     | test eax,eax                            |
+01FF34D0                   | 0F8C 4F010000            | jl ca.1FF3625                           | nop
+01FF34D6                   | 6A 01                    | push 1                                  |
+01FF34D8                   | E8 330DA0FE              | call ca.9F4210                          |
+01FF34DD                   | 50                       | push eax                                |
+01FF34DE                   | 89E0                     | mov eax,esp                             |
+01FF34E0                   | 68 0F0BEE0C              | push CEE0B0F                            |
+01FF34E5                   | 893424                   | mov dword ptr ss:[esp],esi              |
+01FF34E8                   | BE 8E5DB33F              | mov esi,3FB35D8E                        |
+01FF34ED                   | 81EE 8A5DB33F            | sub esi,3FB35D8A                        |
+01FF34F3                   | 05 F841723D              | add eax,3D7241F8                        |
+01FF34F8                   | 01F0                     | add eax,esi                             |
+01FF34FA                   | 2D F841723D              | sub eax,3D7241F8                        |
+01FF34FF                   | 5E                       | pop esi                                 |
+01FF3500                   | 2D 04000000              | sub eax,4                               |
+01FF3505                   | 330424                   | xor eax,dword ptr ss:[esp]              |
+01FF3508                   | 310424                   | xor dword ptr ss:[esp],eax              |
+01FF350B                   | 330424                   | xor eax,dword ptr ss:[esp]              |
+01FF350E                   | 5C                       | pop esp                                 |
+01FF350F                   | 890C24                   | mov dword ptr ss:[esp],ecx              |
+01FF3512                   | 892C24                   | mov dword ptr ss:[esp],ebp              |
+01FF3515                   | 891C24                   | mov dword ptr ss:[esp],ebx              |
+01FF3518                   | 51                       | push ecx                                |
+01FF3519                   | C70424 F848ED27          | mov dword ptr ss:[esp],27ED48F8         |
+01FF3520                   | 54                       | push esp                                |
+01FF3521                   | 8F0424                   | pop dword ptr ss:[esp]                  |
+01FF3524                   | 810424 04000000          | add dword ptr ss:[esp],4                |
+01FF352B                   | FF3424                   | push dword ptr ss:[esp]                 |
+01FF352E                   | 5B                       | pop ebx                                 |
+01FF352F                   | 83C4 04                  | add esp,4                               |
+01FF3532                   | 81C3 04000000            | add ebx,4                               |
+01FF3538                   | 83C3 04                  | add ebx,4                               |
+01FF353B                   | 56                       | push esi                                |
+01FF353C                   | 893C24                   | mov dword ptr ss:[esp],edi              |
+01FF353F                   | C70424 BFB71404          | mov dword ptr ss:[esp],414B7BF          |
+01FF3546                   | 891C24                   | mov dword ptr ss:[esp],ebx              |
+01FF3549                   | FF7424 04                | push dword ptr ss:[esp+4]               |
+01FF354D                   | 5B                       | pop ebx                                 |
+01FF354E                   | 8F0424                   | pop dword ptr ss:[esp]                  |
+01FF3551                   | 8B2424                   | mov esp,dword ptr ss:[esp]              |
+01FF3554                   | 55                       | push ebp                                |
+01FF3555                   | 890424                   | mov dword ptr ss:[esp],eax              |
+01FF3558                   | 50                       | push eax                                |
+01FF3559                   | B8 F7C2B179              | mov eax,79B1C2F7                        |
+01FF355E                   | 814424 04 4830F95F       | add dword ptr ss:[esp+4],5FF93048       |
+01FF3566                   | 014424 04                | add dword ptr ss:[esp+4],eax            |
+01FF356A                   | 816C24 04 4830F95F       | sub dword ptr ss:[esp+4],5FF93048       |
+01FF3572                   | 8B0424                   | mov eax,dword ptr ss:[esp]              |
+01FF3575                   | 81C4 04000000            | add esp,4                               |
+01FF357B                   | 8F45 F8                  | pop dword ptr ss:[ebp-8]                |
+01FF357E                   | 68 0099FD76              | push rpcrt4.76FD9900                    |
+01FF3583                   | 893C24                   | mov dword ptr ss:[esp],edi              |
+01FF3586                   | BF D342373C              | mov edi,3C3742D3                        |
+01FF358B                   | 81CF C9EBBF5F            | or edi,5FBFEBC9                         |
+01FF3591                   | 81C7 C7FB6E79            | add edi,796EFBC7                        |
+01FF3597                   | 56                       | push esi                                |
+01FF3598                   | BE 050BAF7B              | mov esi,7BAF0B05                        |
+01FF359D                   | 53                       | push ebx                                |
+01FF359E                   | 893424                   | mov dword ptr ss:[esp],esi              |
+01FF35A1                   | 891C24                   | mov dword ptr ss:[esp],ebx              |
+01FF35A4                   | BB D60EE77C              | mov ebx,7CE70ED6                        |
+01FF35A9                   | 21DE                     | and esi,ebx                             |
+01FF35AB                   | 5B                       | pop ebx                                 |
+01FF35AC                   | 53                       | push ebx                                |
+01FF35AD                   | BB 820A677F              | mov ebx,7F670A82                        |
+01FF35B2                   | F7D3                     | not ebx                                 |
+01FF35B4                   | 4B                       | dec ebx                                 |
+01FF35B5                   | F7D3                     | not ebx                                 |
+01FF35B7                   | C1E3 04                  | shl ebx,4                               |
+01FF35BA                   | C1E3 07                  | shl ebx,7                               |
+01FF35BD                   | 57                       | push edi                                |
+01FF35BE                   | BF 0000523F              | mov edi,3F520000                        |
+01FF35C3                   | 81C7 7A659573            | add edi,7395657A                        |
+01FF35C9                   | 81F7 BEF1B649            | xor edi,49B6F1BE                        | 49B6F1BE:"郖G"
+01FF35CF                   | C1E7 02                  | shl edi,2                               |
+01FF35D2                   | C1EF 01                  | shr edi,1                               |
+01FF35D5                   | 4F                       | dec edi                                 |
+01FF35D6                   | 52                       | push edx                                |
+01FF35D7                   | BA 9E26FF71              | mov edx,71FF269E                        |
+01FF35DC                   | 81C2 C6FE08B0            | add edx,B008FEC6                        |
+01FF35E2                   | 31D7                     | xor edi,edx                             |
+01FF35E4                   | 8B1424                   | mov edx,dword ptr ss:[esp]              |
+01FF35E7                   | 81C4 04000000            | add esp,4                               |
+01FF35ED                   | 31FB                     | xor ebx,edi                             |
+01FF35EF                   | 5F                       | pop edi                                 |
+01FF35F0                   | 29DE                     | sub esi,ebx                             |
+01FF35F2                   | 8B1C24                   | mov ebx,dword ptr ss:[esp]              |
+01FF35F5                   | 83C4 04                  | add esp,4                               |
+01FF35F8                   | 81F6 309C5E75            | xor esi,combase.755E9C30                |
+01FF35FE                   | 09F7                     | or edi,esi                              |
+01FF3600                   | 8B3424                   | mov esi,dword ptr ss:[esp]              |
+01FF3603                   | 57                       | push edi                                |
