@@ -1,0 +1,221 @@
+00A2C21B                      | 8945 B0                  | mov dword ptr ss:[ebp-50],eax           |
+00A2C21E                      | 837D B0 00               | cmp dword ptr ss:[ebp-50],0             |
+00A2C222                      | 74 37                    | je ca.A2C25B                            |
+00A2C224                      | 8B45 B0                  | mov eax,dword ptr ss:[ebp-50]           |
+00A2C227                      | 50                       | push eax                                | eax:L"蠈楢"
+00A2C228                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+00A2C22B                      | E8 A0110000              | call ca.A2D3D0                          |
+00A2C230                      | 85C0                     | test eax,eax                            |
+00A2C232                      | 75 04                    | jne ca.A2C238                           |
+00A2C234                      | 33C0                     | xor eax,eax                             |
+00A2C236                      | EB 28                    | jmp ca.A2C260                           |
+00A2C238                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+00A2C23B                      | 81C1 D4070000            | add ecx,7D4                             |
+00A2C241                      | E8 7A6E0100              | call ca.A430C0                          |
+00A2C246                      | 6A 00                    | push 0                                  |
+00A2C248                      | 6A 01                    | push 1                                  |
+00A2C24A                      | 68 9C000000              | push 9C                                 |
+00A2C24F                      | E8 CCC1ABFF              | call ca.4E8420                          |
+00A2C254                      | 8BC8                     | mov ecx,eax                             |
+00A2C256                      | E8 35DD1900              | call ca.BC9F90                          |
+00A2C25B                      | B8 01000000              | mov eax,1                               |
+00A2C260                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00A2C263                      | 64:890D 00000000         | mov dword ptr fs:[0],ecx                |
+00A2C26A                      | 59                       | pop ecx                                 |
+00A2C26B                      | 5E                       | pop esi                                 |
+00A2C26C                      | 8BE5                     | mov esp,ebp                             |
+00A2C26E                      | 5D                       | pop ebp                                 |
+00A2C26F                      | C3                       | ret                                     |
+00A2C270                      | 55                       | push ebp                                |
+00A2C271                      | 8BEC                     | mov ebp,esp                             |
+00A2C273                      | 83EC 40                  | sub esp,40                              |
+00A2C276                      | 894D F8                  | mov dword ptr ss:[ebp-8],ecx            |
+00A2C279                      | E8 A265B2FF              | call ca.552820                          |
+00A2C27E                      | 8BC8                     | mov ecx,eax                             |
+00A2C280                      | E8 FB4B2F00              | call ca.D20E80                          |
+00A2C285                      | 0FB6C0                   | movzx eax,al                            |
+00A2C288                      | 85C0                     | test eax,eax                            |
+00A2C28A                      | 75 05                    | jne ca.A2C291                           |
+00A2C28C                      | E9 0E020000              | jmp ca.A2C49F                           |
+00A2C291                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C294                      | 8B11                     | mov edx,dword ptr ds:[ecx]              |
+00A2C296                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C299                      | 8B42 7C                  | mov eax,dword ptr ds:[edx+7C]           |
+00A2C29C                      | FFD0                     | call eax                                |
+00A2C29E                      | 85C0                     | test eax,eax                            |
+00A2C2A0                      | 75 25                    | jne ca.A2C2C7                           |
+00A2C2A2                      | 6A FF                    | push FFFFFFFF                           |
+00A2C2A4                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C2A7                      | 81E9 84050000            | sub ecx,584                             |
+00A2C2AD                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            |
+00A2C2B0                      | 8B82 7CFAFFFF            | mov eax,dword ptr ds:[edx-584]          |
+00A2C2B6                      | 8B90 FC000000            | mov edx,dword ptr ds:[eax+FC]           |
+00A2C2BC                      | FFD2                     | call edx                                |
+00A2C2BE                      | 85C0                     | test eax,eax                            |
+00A2C2C0                      | 75 05                    | jne ca.A2C2C7                           |
+00A2C2C2                      | E9 D8010000              | jmp ca.A2C49F                           |
+00A2C2C7                      | E8 5465B2FF              | call ca.552820                          |
+00A2C2CC                      | 8BC8                     | mov ecx,eax                             |
+00A2C2CE                      | E8 4D4A2F00              | call ca.D20D20                          |
+00A2C2D3                      | 85C0                     | test eax,eax                            |
+00A2C2D5                      | 74 05                    | je ca.A2C2DC                            |
+00A2C2D7                      | E9 C3010000              | jmp ca.A2C49F                           |
+00A2C2DC                      | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            |
+00A2C2DF                      | 83B8 00210000 00         | cmp dword ptr ds:[eax+2100],0           |
+00A2C2E6                      | 75 05                    | jne ca.A2C2ED                           |
+00A2C2E8                      | E9 B2010000              | jmp ca.A2C49F                           |
+00A2C2ED                      | 8D4D D8                  | lea ecx,dword ptr ss:[ebp-28]           |
+00A2C2F0                      | 51                       | push ecx                                |
+00A2C2F1                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            |
+00A2C2F4                      | 8B02                     | mov eax,dword ptr ds:[edx]              |
+00A2C2F6                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C2F9                      | 8B50 64                  | mov edx,dword ptr ds:[eax+64]           |
+00A2C2FC                      | FFD2                     | call edx                                |
+00A2C2FE                      | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            |
+00A2C301                      | 8B88 00210000            | mov ecx,dword ptr ds:[eax+2100]         | 全屏吸物
+00A2C307                      | E8 F4E02800              | call ca.CBA400                          |
+00A2C30C                      | 8945 F0                  | mov dword ptr ss:[ebp-10],eax           |
+00A2C30F                      | 837D F0 00               | cmp dword ptr ss:[ebp-10],0             |
+00A2C313                      | 75 05                    | jne ca.A2C31A                           |
+00A2C315                      | E9 85010000              | jmp ca.A2C49F                           |
+00A2C31A                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            | [ebp-8]:"€\n"
+00A2C31D                      | 8B89 00210000            | mov ecx,dword ptr ds:[ecx+2100]         |
+00A2C323                      | E8 A8E22800              | call ca.CBA5D0                          |
+00A2C328                      | 8945 E0                  | mov dword ptr ss:[ebp-20],eax           |
+00A2C32B                      | 8D55 D8                  | lea edx,dword ptr ss:[ebp-28]           |
+00A2C32E                      | 52                       | push edx                                |
+00A2C32F                      | 8D45 DC                  | lea eax,dword ptr ss:[ebp-24]           |
+00A2C332                      | 50                       | push eax                                |
+00A2C333                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+00A2C336                      | E8 25133200              | call ca.D4D660                          |
+00A2C33B                      | 8B4D D8                  | mov ecx,dword ptr ss:[ebp-28]           |
+00A2C33E                      | 51                       | push ecx                                |
+00A2C33F                      | 8B55 DC                  | mov edx,dword ptr ss:[ebp-24]           | [ebp-24]:&L"　耀"
+00A2C342                      | 52                       | push edx                                |
+00A2C343                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           | [ebp-10]:&L"凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑
+00A2C346                      | E8 45B23100              | call ca.D47590                          |
+00A2C34B                      | 8945 EC                  | mov dword ptr ss:[ebp-14],eax           | [ebp-14]:&L"　耀"
+00A2C34E                      | 8B45 D8                  | mov eax,dword ptr ss:[ebp-28]           |
+00A2C351                      | 50                       | push eax                                |
+00A2C352                      | 8B4D DC                  | mov ecx,dword ptr ss:[ebp-24]           |
+00A2C355                      | 51                       | push ecx                                |
+00A2C356                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+00A2C359                      | E8 62B53100              | call ca.D478C0                          |
+00A2C35E                      | 8945 F4                  | mov dword ptr ss:[ebp-C],eax            |
+00A2C361                      | E8 BA64B2FF              | call ca.552820                          |
+00A2C366                      | 8BC8                     | mov ecx,eax                             |
+00A2C368                      | E8 43D32E00              | call ca.D196B0                          |
+00A2C36D                      | 8945 E4                  | mov dword ptr ss:[ebp-1C],eax           |
+00A2C370                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            | [ebp-8]:&L"凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑�
+00A2C373                      | 8B02                     | mov eax,dword ptr ds:[edx]              |
+00A2C375                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C378                      | 8B50 28                  | mov edx,dword ptr ds:[eax+28]           | edx:&"hc_rankrewardtl.luc"
+00A2C37B                      | FFD2                     | call edx                                |
+00A2C37D                      | 8945 E8                  | mov dword ptr ss:[ebp-18],eax           |
+00A2C380                      | 837D F4 00               | cmp dword ptr ss:[ebp-C],0              |
+00A2C384                      | 0F84 97000000            | je ca.A2C421                            |
+00A2C38A                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00A2C38D                      | E8 4ED10100              | call ca.A494E0                          |
+00A2C392                      | 85C0                     | test eax,eax                            |
+00A2C394                      | 0F84 87000000            | je ca.A2C421                            |
+00A2C39A                      | 8B45 F4                  | mov eax,dword ptr ss:[ebp-C]            |
+00A2C39D                      | 8B10                     | mov edx,dword ptr ds:[eax]              |
+00A2C39F                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00A2C3A2                      | 8B42 64                  | mov eax,dword ptr ds:[edx+64]           |
+00A2C3A5                      | FFD0                     | call eax                                |
+00A2C3A7                      | 83F8 FF                  | cmp eax,FFFFFFFF                        |
+00A2C3AA                      | 74 75                    | je ca.A2C421                            |
+00A2C3AC                      | 8D4D D0                  | lea ecx,dword ptr ss:[ebp-30]           |
+00A2C3AF                      | 51                       | push ecx                                |
+00A2C3B0                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C3B3                      | 81E9 84050000            | sub ecx,584                             |
+00A2C3B9                      | E8 A262FDFF              | call ca.A02660                          |
+00A2C3BE                      | 50                       | push eax                                |
+00A2C3BF                      | 8D55 C8                  | lea edx,dword ptr ss:[ebp-38]           |
+00A2C3C2                      | 52                       | push edx                                |
+00A2C3C3                      | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+00A2C3C6                      | E8 6500FCFF              | call ca.9EC430                          |
+00A2C3CB                      | 8BC8                     | mov ecx,eax                             |
+00A2C3CD                      | E8 6ED19500              | call ca.1389540                         |
+00A2C3D2                      | 85C0                     | test eax,eax                            |
+00A2C3D4                      | 74 4B                    | je ca.A2C421                            |
+00A2C3D6                      | 837D E0 00               | cmp dword ptr ss:[ebp-20],0             |
+00A2C3DA                      | 74 45                    | je ca.A2C421                            |
+00A2C3DC                      | 8B45 D8                  | mov eax,dword ptr ss:[ebp-28]           |
+00A2C3DF                      | 50                       | push eax                                |
+00A2C3E0                      | 8B4D DC                  | mov ecx,dword ptr ss:[ebp-24]           |
+00A2C3E3                      | 51                       | push ecx                                |
+00A2C3E4                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            |
+00A2C3E7                      | 81EA 84050000            | sub edx,584                             |
+00A2C3ED                      | 52                       | push edx                                | edx:L"-1"
+00A2C3EE                      | 8B45 F4                  | mov eax,dword ptr ss:[ebp-C]            |
+00A2C3F1                      | 50                       | push eax                                |
+00A2C3F2                      | 8B4D E0                  | mov ecx,dword ptr ss:[ebp-20]           |
+00A2C3F5                      | E8 56456300              | call ca.1060950                         |
+00A2C3FA                      | 85C0                     | test eax,eax                            |
+00A2C3FC                      | 74 23                    | je ca.A2C421                            |
+00A2C3FE                      | 8B4D D8                  | mov ecx,dword ptr ss:[ebp-28]           |
+00A2C401                      | 51                       | push ecx                                |
+00A2C402                      | 8B55 DC                  | mov edx,dword ptr ss:[ebp-24]           |
+00A2C405                      | 52                       | push edx                                |
+00A2C406                      | 8B45 E8                  | mov eax,dword ptr ss:[ebp-18]           |
+00A2C409                      | 50                       | push eax                                |
+00A2C40A                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C40D                      | 8B89 00210000            | mov ecx,dword ptr ds:[ecx+2100]         |
+00A2C413                      | E8 58FA2800              | call ca.CBBE70                          |
+00A2C418                      | 50                       | push eax                                |
+00A2C419                      | 8B4D E4                  | mov ecx,dword ptr ss:[ebp-1C]           |
+00A2C41C                      | E8 AFD82A00              | call ca.CD9CD0                          |
+00A2C421                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C424                      | 81E9 84050000            | sub ecx,584                             |
+00A2C42A                      | E8 C13BFDFF              | call ca.9FFFF0                          |
+00A2C42F                      | 85C0                     | test eax,eax                            |
+00A2C431                      | 74 02                    | je ca.A2C435                            |
+00A2C433                      | EB 6A                    | jmp ca.A2C49F                           |
+00A2C435                      | 837D EC 00               | cmp dword ptr ss:[ebp-14],0             |
+00A2C439                      | 74 37                    | je ca.A2C472                            |
+00A2C43B                      | 6A 00                    | push 0                                  |
+00A2C43D                      | 8B4D EC                  | mov ecx,dword ptr ss:[ebp-14]           |
+00A2C440                      | E8 ABFFFBFF              | call ca.9EC3F0                          |
+00A2C445                      | 50                       | push eax                                |
+00A2C446                      | 8B4D EC                  | mov ecx,dword ptr ss:[ebp-14]           |
+00A2C449                      | E8 C2FFFBFF              | call ca.9EC410                          |
+00A2C44E                      | 50                       | push eax                                |
+00A2C44F                      | 8D4D C0                  | lea ecx,dword ptr ss:[ebp-40]           |
+00A2C452                      | E8 F9E9AAFF              | call ca.4DAE50                          |
+00A2C457                      | 50                       | push eax                                |
+00A2C458                      | 8B55 E8                  | mov edx,dword ptr ss:[ebp-18]           |
+00A2C45B                      | 52                       | push edx                                |
+00A2C45C                      | 8B45 E4                  | mov eax,dword ptr ss:[ebp-1C]           |
+00A2C45F                      | 50                       | push eax                                |
+00A2C460                      | 8B4D EC                  | mov ecx,dword ptr ss:[ebp-14]           |
+00A2C463                      | 51                       | push ecx                                |
+00A2C464                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C467                      | 81E9 84050000            | sub ecx,584                             |
+00A2C46D                      | E8 2E280000              | call ca.A2ECA0                          |
+00A2C472                      | 8D4D FF                  | lea ecx,dword ptr ss:[ebp-1]            |
+00A2C475                      | E8 86DEFEFF              | call ca.A1A300                          |
+00A2C47A                      | 0FB6D0                   | movzx edx,al                            |
+00A2C47D                      | 85D2                     | test edx,edx                            |
+00A2C47F                      | 74 1E                    | je ca.A2C49F                            |
+00A2C481                      | 8B45 E8                  | mov eax,dword ptr ss:[ebp-18]           |
+00A2C484                      | 50                       | push eax                                |
+00A2C485                      | 8D4D D8                  | lea ecx,dword ptr ss:[ebp-28]           |
+00A2C488                      | 51                       | push ecx                                |
+00A2C489                      | 8B55 F0                  | mov edx,dword ptr ss:[ebp-10]           |
+00A2C48C                      | 52                       | push edx                                |
+00A2C48D                      | 8B45 E4                  | mov eax,dword ptr ss:[ebp-1C]           |
+00A2C490                      | 50                       | push eax                                |
+00A2C491                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+00A2C494                      | 81E9 84050000            | sub ecx,584                             |
+00A2C49A                      | E8 712B0000              | call ca.A2F010                          |
+00A2C49F                      | 8BE5                     | mov esp,ebp                             |
+00A2C4A1                      | 5D                       | pop ebp                                 |
+00A2C4A2                      | C3                       | ret                                     |
+00A2C4A3                      | CC                       | int3                                    |
+00A2C4A4                      | CC                       | int3                                    |
+00A2C4A5                      | CC                       | int3                                    |
+00A2C4A6                      | CC                       | int3                                    |
+00A2C4A7                      | CC                       | int3                                    |
+00A2C4A8                      | CC                       | int3                                    |
+00A2C4A9                      | CC                       | int3                                    |
