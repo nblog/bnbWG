@@ -2,7 +2,7 @@
 00A2C21E                      | 837D B0 00               | cmp dword ptr ss:[ebp-50],0             |
 00A2C222                      | 74 37                    | je ca.A2C25B                            |
 00A2C224                      | 8B45 B0                  | mov eax,dword ptr ss:[ebp-50]           |
-00A2C227                      | 50                       | push eax                                | eax:L"蠈楢"
+00A2C227                      | 50                       | push eax                                | 
 00A2C228                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
 00A2C22B                      | E8 A0110000              | call ca.A2D3D0                          |
 00A2C230                      | 85C0                     | test eax,eax                            |
@@ -71,14 +71,14 @@
 00A2C2F6                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
 00A2C2F9                      | 8B50 64                  | mov edx,dword ptr ds:[eax+64]           |
 00A2C2FC                      | FFD2                     | call edx                                |
-00A2C2FE                      | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            |
-00A2C301                      | 8B88 00210000            | mov ecx,dword ptr ds:[eax+2100]         | 全屏吸物
+00A2C2FE                      | 8B45 F8                  | mov eax,dword ptr ss:[ebp-8]            | 全屏吸物
+00A2C301                      | 8B88 00210000            | mov ecx,dword ptr ds:[eax+2100]         | 
 00A2C307                      | E8 F4E02800              | call ca.CBA400                          |
 00A2C30C                      | 8945 F0                  | mov dword ptr ss:[ebp-10],eax           |
 00A2C30F                      | 837D F0 00               | cmp dword ptr ss:[ebp-10],0             |
 00A2C313                      | 75 05                    | jne ca.A2C31A                           |
 00A2C315                      | E9 85010000              | jmp ca.A2C49F                           |
-00A2C31A                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            | [ebp-8]:"€\n"
+00A2C31A                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            | 
 00A2C31D                      | 8B89 00210000            | mov ecx,dword ptr ds:[ecx+2100]         |
 00A2C323                      | E8 A8E22800              | call ca.CBA5D0                          |
 00A2C328                      | 8945 E0                  | mov dword ptr ss:[ebp-20],eax           |
@@ -90,11 +90,11 @@
 00A2C336                      | E8 25133200              | call ca.D4D660                          |
 00A2C33B                      | 8B4D D8                  | mov ecx,dword ptr ss:[ebp-28]           |
 00A2C33E                      | 51                       | push ecx                                |
-00A2C33F                      | 8B55 DC                  | mov edx,dword ptr ss:[ebp-24]           | [ebp-24]:&L"　耀"
+00A2C33F                      | 8B55 DC                  | mov edx,dword ptr ss:[ebp-24]           | 
 00A2C342                      | 52                       | push edx                                |
-00A2C343                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           | [ebp-10]:&L"凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑
+00A2C343                      | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           | 
 00A2C346                      | E8 45B23100              | call ca.D47590                          |
-00A2C34B                      | 8945 EC                  | mov dword ptr ss:[ebp-14],eax           | [ebp-14]:&L"　耀"
+00A2C34B                      | 8945 EC                  | mov dword ptr ss:[ebp-14],eax           | 
 00A2C34E                      | 8B45 D8                  | mov eax,dword ptr ss:[ebp-28]           |
 00A2C351                      | 50                       | push eax                                |
 00A2C352                      | 8B4D DC                  | mov ecx,dword ptr ss:[ebp-24]           |
@@ -106,10 +106,10 @@
 00A2C366                      | 8BC8                     | mov ecx,eax                             |
 00A2C368                      | E8 43D32E00              | call ca.D196B0                          |
 00A2C36D                      | 8945 E4                  | mov dword ptr ss:[ebp-1C],eax           |
-00A2C370                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            | [ebp-8]:&L"凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑凿兑�
+00A2C370                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            | 
 00A2C373                      | 8B02                     | mov eax,dword ptr ds:[edx]              |
 00A2C375                      | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
-00A2C378                      | 8B50 28                  | mov edx,dword ptr ds:[eax+28]           | edx:&"hc_rankrewardtl.luc"
+00A2C378                      | 8B50 28                  | mov edx,dword ptr ds:[eax+28]           | 
 00A2C37B                      | FFD2                     | call edx                                |
 00A2C37D                      | 8945 E8                  | mov dword ptr ss:[ebp-18],eax           |
 00A2C380                      | 837D F4 00               | cmp dword ptr ss:[ebp-C],0              |
@@ -147,7 +147,7 @@
 00A2C3E3                      | 51                       | push ecx                                |
 00A2C3E4                      | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            |
 00A2C3E7                      | 81EA 84050000            | sub edx,584                             |
-00A2C3ED                      | 52                       | push edx                                | edx:L"-1"
+00A2C3ED                      | 52                       | push edx                                | 
 00A2C3EE                      | 8B45 F4                  | mov eax,dword ptr ss:[ebp-C]            |
 00A2C3F1                      | 50                       | push eax                                |
 00A2C3F2                      | 8B4D E0                  | mov ecx,dword ptr ss:[ebp-20]           |
