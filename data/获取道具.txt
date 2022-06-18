@@ -1,0 +1,315 @@
+
+push 0
+push 0x5F5E0FF
+push 0xad
+push 0
+mov eax, 0x00C25200
+call eax
+add esp, 0x10
+
+
+$-19B    00C25065   | 83F8 02                  | cmp eax,2                               |
+$-198    00C25068   | 75 5A                    | jne ca.C250C4                           |
+$-196    00C2506A   | 6A 01                    | push 1                                  |
+$-194    00C2506C   | 8D4D 94                  | lea ecx,dword ptr ss:[ebp-6C]           |
+$-191    00C2506F   | E8 4CCBA0FF              | call ca.631BC0                          |
+$-18C    00C25074   | 8BC8                     | mov ecx,eax                             |
+$-18A    00C25076   | E8 554C89FF              | call ca.4B9CD0                          |
+$-185    00C2507B   | 50                       | push eax                                |
+$-184    00C2507C   | 6A 00                    | push 0                                  |
+$-182    00C2507E   | 8D4D 94                  | lea ecx,dword ptr ss:[ebp-6C]           |
+$-17F    00C25081   | E8 3ACBA0FF              | call ca.631BC0                          |
+$-17A    00C25086   | 8BC8                     | mov ecx,eax                             |
+$-178    00C25088   | E8 434C89FF              | call ca.4B9CD0                          |
+$-173    00C2508D   | 50                       | push eax                                | eax:&"Mlv"
+$-172    00C2508E   | 68 9C826401              | push ca.164829C                         | 164829C:"%s, %s"
+$-16D    00C25093   | 8D4D A8                  | lea ecx,dword ptr ss:[ebp-58]           |
+$-16A    00C25096   | 51                       | push ecx                                |
+$-169    00C25097   | E8 24BE7400              | call ca.1370EC0                         |
+$-164    00C2509C   | 83C4 10                  | add esp,10                              |
+$-161    00C2509F   | 8945 90                  | mov dword ptr ss:[ebp-70],eax           |
+$-15E    00C250A2   | 8B55 90                  | mov edx,dword ptr ss:[ebp-70]           |
+$-15B    00C250A5   | 8955 8C                  | mov dword ptr ss:[ebp-74],edx           | [ebp-74]:"/)V"
+$-158    00C250A8   | C645 FC 04               | mov byte ptr ss:[ebp-4],4               |
+$-154    00C250AC   | 8B45 8C                  | mov eax,dword ptr ss:[ebp-74]           |
+$-151    00C250AF   | 50                       | push eax                                |
+$-150    00C250B0   | 8D4D D8                  | lea ecx,dword ptr ss:[ebp-28]           |
+$-14D    00C250B3   | E8 288783FF              | call ca.45D7E0                          |
+$-148    00C250B8   | C645 FC 02               | mov byte ptr ss:[ebp-4],2               |
+$-144    00C250BC   | 8D4D A8                  | lea ecx,dword ptr ss:[ebp-58]           |
+$-141    00C250BF   | E8 5CF981FF              | call ca.444A20                          |
+$-13C    00C250C4   | 8D4D D8                  | lea ecx,dword ptr ss:[ebp-28]           |
+$-139    00C250C7   | 51                       | push ecx                                |
+$-138    00C250C8   | 8B4D 08                  | mov ecx,dword ptr ss:[ebp+8]            |
+$-135    00C250CB   | E8 D07D83FF              | call ca.45CEA0                          |
+$-130    00C250D0   | 8B55 A0                  | mov edx,dword ptr ss:[ebp-60]           |
+$-12D    00C250D3   | 83CA 01                  | or edx,1                                |
+$-12A    00C250D6   | 8955 A0                  | mov dword ptr ss:[ebp-60],edx           |
+$-127    00C250D9   | C645 FC 01               | mov byte ptr ss:[ebp-4],1               |
+$-123    00C250DD   | 8D4D 94                  | lea ecx,dword ptr ss:[ebp-6C]           |
+$-120    00C250E0   | E8 0BE486FF              | call ca.4934F0                          |
+$-11B    00C250E5   | C645 FC 00               | mov byte ptr ss:[ebp-4],0               |
+$-117    00C250E9   | 8D4D D8                  | lea ecx,dword ptr ss:[ebp-28]           |
+$-114    00C250EC   | E8 2FF981FF              | call ca.444A20                          |
+$-10F    00C250F1   | 8B45 08                  | mov eax,dword ptr ss:[ebp+8]            |
+$-10C    00C250F4   | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+$-109    00C250F7   | 64:890D 00000000         | mov dword ptr fs:[0],ecx                |
+$-102    00C250FE   | 59                       | pop ecx                                 |
+$-101    00C250FF   | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+$-FE     00C25102   | 33CD                     | xor ecx,ebp                             |
+$-FC     00C25104   | E8 6A3E7200              | call ca.1348F73                         |
+$-F7     00C25109   | 8BE5                     | mov esp,ebp                             |
+$-F5     00C2510B   | 5D                       | pop ebp                                 |
+$-F4     00C2510C   | C3                       | ret                                     |
+$-F3     00C2510D   | CC                       | int3                                    |
+$-F2     00C2510E   | CC                       | int3                                    |
+$-F1     00C2510F   | CC                       | int3                                    |
+$-F0     00C25110   | 55                       | push ebp                                |
+$-EF     00C25111   | 8BEC                     | mov ebp,esp                             |
+$-ED     00C25113   | 83EC 14                  | sub esp,14                              |
+$-EA     00C25116   | 8B45 08                  | mov eax,dword ptr ss:[ebp+8]            |
+$-E7     00C25119   | 50                       | push eax                                | eax:L","
+$-E6     00C2511A   | E8 C1AC89FF              | call ca.4BFDE0                          |
+$-E1     00C2511F   | 8BC8                     | mov ecx,eax                             |
+$-DF     00C25121   | E8 5A424700              | call ca.1099380                         |
+$-DA     00C25126   | 8945 F4                  | mov dword ptr ss:[ebp-C],eax            |
+$-D7     00C25129   | 837D F4 00               | cmp dword ptr ss:[ebp-C],0              |
+$-D3     00C2512D   | 75 05                    | jne ca.C25134                           |
+$-D1     00C2512F   | E9 C3000000              | jmp ca.C251F7                           |
+$-CC     00C25134   | 8B4D 0C                  | mov ecx,dword ptr ss:[ebp+C]            |
+$-C9     00C25137   | 51                       | push ecx                                |
+$-C8     00C25138   | 8B55 08                  | mov edx,dword ptr ss:[ebp+8]            |
+$-C5     00C2513B   | 52                       | push edx                                |
+$-C4     00C2513C   | E8 9FAC89FF              | call ca.4BFDE0                          |
+$-BF     00C25141   | 8BC8                     | mov ecx,eax                             |
+$-BD     00C25143   | E8 D8444700              | call ca.1099620                         |
+$-B8     00C25148   | 8945 FC                  | mov dword ptr ss:[ebp-4],eax            |
+$-B5     00C2514B   | 837D FC 00               | cmp dword ptr ss:[ebp-4],0              |
+$-B1     00C2514F   | 75 05                    | jne ca.C25156                           |
+$-AF     00C25151   | E9 A1000000              | jmp ca.C251F7                           |
+$-AA     00C25156   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$-A7     00C25159   | 83C1 60                  | add ecx,60                              |
+$-A4     00C2515C   | E8 8FA189FF              | call ca.4BF2F0                          |
+$-9F     00C25161   | 3B45 10                  | cmp eax,dword ptr ss:[ebp+10]           |
+$-9C     00C25164   | 7E 21                    | jle ca.C25187                           |
+$-9A     00C25166   | 8B45 10                  | mov eax,dword ptr ss:[ebp+10]           |
+$-97     00C25169   | 50                       | push eax                                |
+$-96     00C2516A   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$-93     00C2516D   | 83C1 60                  | add ecx,60                              |
+$-90     00C25170   | E8 6B1F9EFF              | call ca.6070E0                          |
+$-8B     00C25175   | 6A 01                    | push 1                                  |
+$-89     00C25177   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$-86     00C2517A   | 81C1 84000000            | add ecx,84                              |
+$-80     00C25180   | E8 6B298FFF              | call ca.517AF0                          |
+$-7B     00C25185   | EB 0C                    | jmp ca.C25193                           |
+$-79     00C25187   | 8B4D 0C                  | mov ecx,dword ptr ss:[ebp+C]            |
+$-76     00C2518A   | 51                       | push ecx                                |
+$-75     00C2518B   | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+$-72     00C2518E   | E8 5D8C4100              | call ca.103DDF0                         |
+$-6D     00C25193   | E8 98744C00              | call ca.10EC630                         |
+$-68     00C25198   | 85C0                     | test eax,eax                            |
+$-66     00C2519A   | 74 5B                    | je ca.C251F7                            |
+$-64     00C2519C   | 8B55 08                  | mov edx,dword ptr ss:[ebp+8]            |
+$-61     00C2519F   | 52                       | push edx                                |
+$-60     00C251A0   | E8 3BAC89FF              | call ca.4BFDE0                          |
+$-5B     00C251A5   | 8BC8                     | mov ecx,eax                             |
+$-59     00C251A7   | E8 24424700              | call ca.10993D0                         |
+$-54     00C251AC   | 8945 F8                  | mov dword ptr ss:[ebp-8],eax            |
+$-51     00C251AF   | 837D F8 00               | cmp dword ptr ss:[ebp-8],0              |
+$-4D     00C251B3   | 75 02                    | jne ca.C251B7                           |
+$-4B     00C251B5   | EB 40                    | jmp ca.C251F7                           |
+$-49     00C251B7   | 8B45 0C                  | mov eax,dword ptr ss:[ebp+C]            |
+$-46     00C251BA   | 50                       | push eax                                |
+$-45     00C251BB   | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            | [ebp-8]:&"Item/ItemAutoShield"
+$-42     00C251BE   | E8 4D7C4900              | call ca.10BCE10                         |
+$-3D     00C251C3   | 8945 F0                  | mov dword ptr ss:[ebp-10],eax           |
+$-3A     00C251C6   | 6A 00                    | push 0                                  |
+$-38     00C251C8   | 68 34678901              | push ca.1896734                         |
+$-33     00C251CD   | 68 1C678901              | push ca.189671C                         |
+$-2E     00C251D2   | 6A 00                    | push 0                                  |
+$-2C     00C251D4   | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+$-29     00C251D7   | 51                       | push ecx                                |
+$-28     00C251D8   | E8 FD077D00              | call ca.13F59DA                         |
+$-23     00C251DD   | 83C4 14                  | add esp,14                              |
+$-20     00C251E0   | 8945 EC                  | mov dword ptr ss:[ebp-14],eax           | [ebp-14]:&"PSx"
+$-1D     00C251E3   | 837D EC 00               | cmp dword ptr ss:[ebp-14],0             | [ebp-14]:&"PSx"
+$-19     00C251E7   | 75 02                    | jne ca.C251EB                           |
+$-17     00C251E9   | EB 0C                    | jmp ca.C251F7                           |
+$-15     00C251EB   | 8B55 F0                  | mov edx,dword ptr ss:[ebp-10]           |
+$-12     00C251EE   | 52                       | push edx                                |
+$-11     00C251EF   | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+$-E      00C251F2   | E8 99784900              | call ca.10BCA90                         |
+$-9      00C251F7   | 8BE5                     | mov esp,ebp                             |
+$-7      00C251F9   | 5D                       | pop ebp                                 |
+$-6      00C251FA   | C3                       | ret                                     |
+$-5      00C251FB   | CC                       | int3                                    |
+$-4      00C251FC   | CC                       | int3                                    |
+$-3      00C251FD   | CC                       | int3                                    |
+$-2      00C251FE   | CC                       | int3                                    |
+$-1      00C251FF   | CC                       | int3                                    |
+$ ==>    00C25200   | 55                       | push ebp                                | µÀ¾ß
+$+1      00C25201   | 8BEC                     | mov ebp,esp                             |
+$+3      00C25203   | 83EC 58                  | sub esp,58                              |
+$+6      00C25206   | A1 48088801              | mov eax,dword ptr ds:[1880848]          |
+$+B      00C2520B   | 33C5                     | xor eax,ebp                             |
+$+D      00C2520D   | 8945 FC                  | mov dword ptr ss:[ebp-4],eax            |
+$+10     00C25210   | 8B45 0C                  | mov eax,dword ptr ss:[ebp+C]            |
+$+13     00C25213   | 50                       | push eax                                |
+$+14     00C25214   | E8 D7AB89FF              | call ca.4BFDF0                          |
+$+19     00C25219   | 8BC8                     | mov ecx,eax                             |
+$+1B     00C2521B   | E8 40584800              | call ca.10AAA60                         |
+$+20     00C25220   | 8945 C0                  | mov dword ptr ss:[ebp-40],eax           |
+$+23     00C25223   | 8B4D C0                  | mov ecx,dword ptr ss:[ebp-40]           |
+$+26     00C25226   | 83C1 14                  | add ecx,14                              |
+$+29     00C25229   | E8 82A089FF              | call ca.4BF2B0                          |
+$+2E     00C2522E   | 0FB6C8                   | movzx ecx,al                            |
+$+31     00C25231   | 83F9 64                  | cmp ecx,64                              | 64:'d'
+$+34     00C25234   | 74 13                    | je ca.C25249                            |
+$+36     00C25236   | 8B4D C0                  | mov ecx,dword ptr ss:[ebp-40]           | [ebp-40]:L"£Å"GameObject@@"
+$+39     00C25239   | 83C1 14                  | add ecx,14                              |
+$+3C     00C2523C   | E8 6FA089FF              | call ca.4BF2B0                          |
+$+41     00C25241   | 0FB6D0                   | movzx edx,al                            |
+$+44     00C25244   | 83FA 65                  | cmp edx,65                              | 65:'e'
+$+47     00C25247   | 75 05                    | jne ca.C2524E                           |
+$+49     00C25249   | E9 71010000              | jmp ca.C253BF                           |
+$+4E     00C2524E   | 8D45 CC                  | lea eax,dword ptr ss:[ebp-34]           |
+$+51     00C25251   | 50                       | push eax                                |
+$+52     00C25252   | E8 09328FFF              | call ca.518460                          |
+$+57     00C25257   | 8BC8                     | mov ecx,eax                             |
+$+59     00C25259   | E8 E2E75A00              | call ca.11D3A40                         |
+$+5E     00C2525E   | 8BC8                     | mov ecx,eax                             |
+$+60     00C25260   | E8 8B9B7400              | call ca.136EDF0                         |
+$+65     00C25265   | DD5D A8                  | fstp qword ptr ss:[ebp-58],st(0)        |
+$+68     00C25268   | F2:0F1045 A8             | movsd xmm0,qword ptr ss:[ebp-58]        |
+$+6D     00C2526D   | F2:0F1145 B8             | movsd qword ptr ss:[ebp-48],xmm0        |
+$+72     00C25272   | 837D 14 00               | cmp dword ptr ss:[ebp+14],0             |
+$+76     00C25276   | 74 08                    | je ca.C25280                            |
+$+78     00C25278   | 8B4D 14                  | mov ecx,dword ptr ss:[ebp+14]           |
+$+7B     00C2527B   | 894D B4                  | mov dword ptr ss:[ebp-4C],ecx           |
+$+7E     00C2527E   | EB 07                    | jmp ca.C25287                           |
+$+80     00C25280   | C745 B4 A0860100         | mov dword ptr ss:[ebp-4C],186A0         |
+$+87     00C25287   | F2:0F2A45 B4             | cvtsi2sd xmm0,dword ptr ss:[ebp-4C]     |
+$+8C     00C2528C   | F2:0F5845 B8             | addsd xmm0,qword ptr ss:[ebp-48]        |
+$+91     00C25291   | F2:0F1145 B8             | movsd qword ptr ss:[ebp-48],xmm0        |
+$+96     00C25296   | 8B55 08                  | mov edx,dword ptr ss:[ebp+8]            |
+$+99     00C25299   | 52                       | push edx                                |
+$+9A     00C2529A   | E8 41AB89FF              | call ca.4BFDE0                          |
+$+9F     00C2529F   | 8BC8                     | mov ecx,eax                             |
+$+A1     00C252A1   | E8 DA404700              | call ca.1099380                         |
+$+A6     00C252A6   | 8945 C8                  | mov dword ptr ss:[ebp-38],eax           |
+$+A9     00C252A9   | 837D C8 00               | cmp dword ptr ss:[ebp-38],0             |
+$+AD     00C252AD   | 75 05                    | jne ca.C252B4                           |
+$+AF     00C252AF   | E9 0B010000              | jmp ca.C253BF                           |
+$+B4     00C252B4   | 8B45 0C                  | mov eax,dword ptr ss:[ebp+C]            |
+$+B7     00C252B7   | 50                       | push eax                                |
+$+B8     00C252B8   | 8B4D C8                  | mov ecx,dword ptr ss:[ebp-38]           |
+$+BB     00C252BB   | E8 20934100              | call ca.103E5E0                         |
+$+C0     00C252C0   | 8945 C4                  | mov dword ptr ss:[ebp-3C],eax           |
+$+C3     00C252C3   | 837D C4 00               | cmp dword ptr ss:[ebp-3C],0             |
+$+C7     00C252C7   | 74 40                    | je ca.C25309                            |
+$+C9     00C252C9   | 8B4D C4                  | mov ecx,dword ptr ss:[ebp-3C]           |
+$+CC     00C252CC   | 81C1 9C000000            | add ecx,9C                              |
+$+D2     00C252D2   | E8 D99F89FF              | call ca.4BF2B0                          |
+$+D7     00C252D7   | 0FB6C8                   | movzx ecx,al                            |
+$+DA     00C252DA   | 83F9 04                  | cmp ecx,4                               |
+$+DD     00C252DD   | 74 2A                    | je ca.C25309                            |
+$+DF     00C252DF   | 8B4D C4                  | mov ecx,dword ptr ss:[ebp-3C]           |
+$+E2     00C252E2   | E8 B9FA4600              | call ca.1094DA0                         |
+$+E7     00C252E7   | F2:0F2AC0                | cvtsi2sd xmm0,eax                       |
+$+EB     00C252EB   | F2:0F5E05 588F6401       | divsd xmm0,qword ptr ds:[1648F58]       |
+$+F3     00C252F3   | F2:0F5845 B8             | addsd xmm0,qword ptr ss:[ebp-48]        |
+$+F8     00C252F8   | F2:0F1145 B8             | movsd qword ptr ss:[ebp-48],xmm0        |
+$+FD     00C252FD   | 8B55 0C                  | mov edx,dword ptr ss:[ebp+C]            |
+$+100    00C25300   | 52                       | push edx                                |
+$+101    00C25301   | 8B4D C8                  | mov ecx,dword ptr ss:[ebp-38]           |
+$+104    00C25304   | E8 E78A4100              | call ca.103DDF0                         |
+$+109    00C25309   | F2:0F1045 B8             | movsd xmm0,qword ptr ss:[ebp-48]        |
+$+10E    00C2530E   | 66:0F2F05 608F6401       | comisd xmm0,qword ptr ds:[1648F60]      |
+$+116    00C25316   | 76 0D                    | jbe ca.C25325                           |
+$+118    00C25318   | F2:0F1005 608F6401       | movsd xmm0,qword ptr ds:[1648F60]       |
+$+120    00C25320   | F2:0F1145 B8             | movsd qword ptr ss:[ebp-48],xmm0        |
+$+125    00C25325   | 8D45 EC                  | lea eax,dword ptr ss:[ebp-14]           |
+$+128    00C25328   | 50                       | push eax                                |
+$+129    00C25329   | 83EC 08                  | sub esp,8                               |
+$+12C    00C2532C   | F2:0F1045 B8             | movsd xmm0,qword ptr ss:[ebp-48]        |
+$+131    00C25331   | F2:0F110424              | movsd qword ptr ss:[esp],xmm0           |
+$+136    00C25336   | FF15 5C245E01            | call dword ptr ds:[<&VariantTimeToSyste |
+$+13C    00C2533C   | 8D4D DC                  | lea ecx,dword ptr ss:[ebp-24]           |
+$+13F    00C2533F   | 51                       | push ecx                                |
+$+140    00C25340   | 83EC 08                  | sub esp,8                               |
+$+143    00C25343   | F2:0F1045 A8             | movsd xmm0,qword ptr ss:[ebp-58]        |
+$+148    00C25348   | F2:0F110424              | movsd qword ptr ss:[esp],xmm0           |
+$+14D    00C2534D   | FF15 5C245E01            | call dword ptr ds:[<&VariantTimeToSyste |
+$+153    00C25353   | 0FB755 E6                | movzx edx,word ptr ss:[ebp-1A]          |
+$+157    00C25357   | 83C2 01                  | add edx,1                               |
+$+15A    00C2535A   | 66:8955 E6               | mov word ptr ss:[ebp-1A],dx             |
+$+15E    00C2535E   | 83EC 10                  | sub esp,10                              |
+$+161    00C25361   | 8BC4                     | mov eax,esp                             |
+$+163    00C25363   | 8B4D EC                  | mov ecx,dword ptr ss:[ebp-14]           |
+$+166    00C25366   | 8908                     | mov dword ptr ds:[eax],ecx              |
+$+168    00C25368   | 8B55 F0                  | mov edx,dword ptr ss:[ebp-10]           |
+$+16B    00C2536B   | 8950 04                  | mov dword ptr ds:[eax+4],edx            |
+$+16E    00C2536E   | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            |
+$+171    00C25371   | 8948 08                  | mov dword ptr ds:[eax+8],ecx            |
+$+174    00C25374   | 8B55 F8                  | mov edx,dword ptr ss:[ebp-8]            |
+$+177    00C25377   | 8950 0C                  | mov dword ptr ds:[eax+C],edx            | edx:"PÕ£"
+$+17A    00C2537A   | 8D45 DC                  | lea eax,dword ptr ss:[ebp-24]           |
+$+17D    00C2537D   | 50                       | push eax                                |
+$+17E    00C2537E   | E8 5DAA89FF              | call ca.4BFDE0                          |
+$+183    00C25383   | 8BC8                     | mov ecx,eax                             |
+$+185    00C25385   | E8 E6454700              | call ca.1099970                         |
+$+18A    00C2538A   | 8945 B0                  | mov dword ptr ss:[ebp-50],eax           |
+$+18D    00C2538D   | 6A 00                    | push 0                                  |
+$+18F    00C2538F   | 8B4D B0                  | mov ecx,dword ptr ss:[ebp-50]           |
+$+192    00C25392   | 51                       | push ecx                                |
+$+193    00C25393   | 83EC 10                  | sub esp,10                              |
+$+196    00C25396   | 8BD4                     | mov edx,esp                             |
+$+198    00C25398   | 8B45 EC                  | mov eax,dword ptr ss:[ebp-14]           |
+$+19B    00C2539B   | 8902                     | mov dword ptr ds:[edx],eax              |
+$+19D    00C2539D   | 8B4D F0                  | mov ecx,dword ptr ss:[ebp-10]           |
+$+1A0    00C253A0   | 894A 04                  | mov dword ptr ds:[edx+4],ecx            |
+$+1A3    00C253A3   | 8B45 F4                  | mov eax,dword ptr ss:[ebp-C]            |
+$+1A6    00C253A6   | 8942 08                  | mov dword ptr ds:[edx+8],eax            |
+$+1A9    00C253A9   | 8B4D F8                  | mov ecx,dword ptr ss:[ebp-8]            |
+$+1AC    00C253AC   | 894A 0C                  | mov dword ptr ds:[edx+C],ecx            |
+$+1AF    00C253AF   | 8B55 10                  | mov edx,dword ptr ss:[ebp+10]           |
+$+1B2    00C253B2   | 52                       | push edx                                |
+$+1B3    00C253B3   | 8B45 C0                  | mov eax,dword ptr ss:[ebp-40]           |
+$+1B6    00C253B6   | 50                       | push eax                                |
+$+1B7    00C253B7   | 8B4D C8                  | mov ecx,dword ptr ss:[ebp-38]           |
+$+1BA    00C253BA   | E8 51834100              | call ca.103D710                         |
+$+1BF    00C253BF   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$+1C2    00C253C2   | 33CD                     | xor ecx,ebp                             |
+$+1C4    00C253C4   | E8 AA3B7200              | call ca.1348F73                         |
+$+1C9    00C253C9   | 8BE5                     | mov esp,ebp                             |
+$+1CB    00C253CB   | 5D                       | pop ebp                                 |
+$+1CC    00C253CC   | C3                       | ret                                     |
+$+1CD    00C253CD   | CC                       | int3                                    |
+$+1CE    00C253CE   | CC                       | int3                                    |
+$+1CF    00C253CF   | CC                       | int3                                    |
+$+1D0    00C253D0   | 55                       | push ebp                                |
+$+1D1    00C253D1   | 8BEC                     | mov ebp,esp                             |
+$+1D3    00C253D3   | 51                       | push ecx                                |
+$+1D4    00C253D4   | 894D FC                  | mov dword ptr ss:[ebp-4],ecx            |
+$+1D7    00C253D7   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$+1DA    00C253DA   | E8 A17C0000              | call ca.C2D080                          |
+$+1DF    00C253DF   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$+1E2    00C253E2   | E8 797B0000              | call ca.C2CF60                          |
+$+1E7    00C253E7   | 8B45 FC                  | mov eax,dword ptr ss:[ebp-4]            |
+$+1EA    00C253EA   | 8BE5                     | mov esp,ebp                             |
+$+1EC    00C253EC   | 5D                       | pop ebp                                 |
+$+1ED    00C253ED   | C2 0400                  | ret 4                                   |
+$+1F0    00C253F0   | 55                       | push ebp                                |
+$+1F1    00C253F1   | 8BEC                     | mov ebp,esp                             |
+$+1F3    00C253F3   | 51                       | push ecx                                |
+$+1F4    00C253F4   | 894D FC                  | mov dword ptr ss:[ebp-4],ecx            |
+$+1F7    00C253F7   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$+1FA    00C253FA   | E8 017D0000              | call ca.C2D100                          |
+$+1FF    00C253FF   | 8B4D FC                  | mov ecx,dword ptr ss:[ebp-4]            |
+$+202    00C25402   | E8 79790000              | call ca.C2CD80                          |
+$+207    00C25407   | 8B45 FC                  | mov eax,dword ptr ss:[ebp-4]            |
+$+20A    00C2540A   | 8BE5                     | mov esp,ebp                             |
+$+20C    00C2540C   | 5D                       | pop ebp                                 |
+$+20D    00C2540D   | C2 0400                  | ret 4                                   |
+$+210    00C25410   | 55                       | push ebp                                |
+$+211    00C25411   | 8BEC                     | mov ebp,esp                             |
